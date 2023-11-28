@@ -26,61 +26,7 @@ class _LoginPageState extends State<LoginPage> {
             _rowTextDontHaveAccount(),
           ],
         ),
-      )
-      /*
-      appBar: AppBar(
-        title: Text('Delivery App')
-      ),      
-      body: Column(
-        children: [
-          SizedBox(height: 20),
-          Text('Nombre'),
-          Container(
-            //margin: EdgeInsets.all(20), genera todas las margenes 
-            //margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10), genera margenes por pares
-            margin: EdgeInsets.only(bottom: 0, left: 30, right: 30, top:40),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Escribe tu nombre',
-              ),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: (){}, //funcion vacia (){}
-            child: Text('Continuar'),
-          ),
-        ],
-      ),
-      
-      body: Row(
-        //mainAxisAlignment: MainAxisAlignment.spaceBetween, separacion maxima
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, //espacio con ambos bordes
-        //children va de ultimo
-        children: [
-          Text('Holis'),
-          //SizedBox(width: 30), se reemplaza con la propiedad mainAxisAligment
-          Text('Mundo'),
-        ],
-      ),
-      
-      body: Stack(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              //color: Colors.lime,
-              color: MyColors.primaryColor,
-              borderRadius: BorderRadius.all(Radius.circular(80))
-            ),
-            height: 150,
-            width: 150,
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 60, top: 60),
-            child: Text('Login')
-          ),
-        ],
-      ),
-    */
+      )     
     );
   }
 
