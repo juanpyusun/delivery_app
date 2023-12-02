@@ -16,17 +16,55 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold( //scaffold: toda la pantalla del celular
       body: Container(
         width: double.infinity,
-        child: Column(
+        child: Stack( //stackea sus elementos contenidos uno encima de otro
           children:[
             //el guion bajo antes indica que el modificador de acceso es privado
-            _imageBanner(),            
-            _textFieldEmail(),
-            _textFieldPassword(),
-            _buttonLogin(),
-            _rowTextDontHaveAccount(),
+            Positioned(
+              left: -100,
+              top:  -80,
+              child: _circleLogin(),
+            ),
+            Positioned(
+              left: 25,
+              top: 55,
+              child: _textLogin(),
+            ),
+            Column(
+              children: [
+                _imageBanner(),            
+                _textFieldEmail(),
+                _textFieldPassword(),
+                _buttonLogin(),
+                _rowTextDontHaveAccount(),
+              ],
+            ),
           ],
         ),
       )     
+    );
+  }
+
+  Widget _textLogin(){
+    return Container(
+      child: Text(
+        'LOGIN',
+        style: TextStyle(
+          color: MyColors.secundaryColor,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
+  Widget _circleLogin(){
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(100),
+        color: MyColors.primaryColor
+      ),
+      height: 230,
+      width: 240,
     );
   }
 
