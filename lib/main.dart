@@ -19,9 +19,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'login',
+      //initialRoute: 'login',
+      initialRoute: 'register',
       routes: {
-        'login': (BuildContext context) => const LoginPage()  //funcion anonima: (parametro entrada) => retorno
+        'login': (BuildContext context) => const LoginPage(),  //funcion anonima: (parametro entrada) => retorno
+        'register': (BuildContext context) => const RegisterPage()
       },
       theme: ThemeData(
         colorScheme: ColorScheme.light(
