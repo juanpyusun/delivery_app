@@ -1,6 +1,6 @@
 # delivery_app
 
-Learning a new Flutter project. 
+A new Flutter project.
 
 ## Getting Started
 

@@ -1,4 +1,5 @@
 import 'package:delivery_app/src/login/login_page.dart';
+import 'package:delivery_app/src/register/register_page.dart';
 import 'package:delivery_app/src/utils/my_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: 'register',
       routes: {
         'login': (BuildContext context) => const LoginPage(),  //funcion anonima: (parametro entrada) => retorno
-        'register': (BuildContext context) => const RegisterPage()
+        'register': (BuildContext context) => const RegisterPage(),
       },
       theme: ThemeData(
         colorScheme: ColorScheme.light(
